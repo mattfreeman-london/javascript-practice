@@ -9,3 +9,6 @@ NumberGuesser.js:
 
 dogYears.js:
 - to enter a human age, and see it in dog years
+
+magicEightBall.js:
+- to create a simple random machine to answer questions
