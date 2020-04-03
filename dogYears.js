@@ -19,3 +19,6 @@ laterYears *= 4;
 
 // adding up the total
 let myAgeInDogYears = earlyYears + laterYears;
+
+// set my name variable
+let myName = 'Matt Freeman'.toLowerCase();
