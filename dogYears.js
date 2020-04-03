@@ -16,3 +16,6 @@ let laterYears = myAge -2;
 
 // accounting for the rest of the dogs age
 laterYears *= 4;
+
+// adding up the total
+let myAgeInDogYears = earlyYears + laterYears;
