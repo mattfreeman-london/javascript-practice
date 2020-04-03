@@ -6,9 +6,8 @@ function generateTarget() {
   return Math.floor(Math.random) * 9
 };
 
-function compareGuesses(humanGuess, computerGuess, secretTarget) {
-  if Math.abs(humanGuess - secretTarget) <= Math.abs(computerGuess - secretTarget)
-    return true;
-} else {
-    return false;
+let compareGuesses = (human, computer, target) => {
+  const userG = Math.abs(target - human);
+  const computerG = Math.abs(target - computer);
+  return userG <= computerG;
 };
