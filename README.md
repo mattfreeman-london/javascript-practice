@@ -7,3 +7,5 @@ Kelvin.js:
 NumberGuesser.js:
 - part of a file to create a number guessing game, from CodeAcademy
 
+dogYears.js:
+- to enter a human age, and see it in dog years
