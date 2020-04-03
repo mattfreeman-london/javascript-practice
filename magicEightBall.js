@@ -36,3 +36,5 @@ switch(randomNumber) {
     eightBall = 'Signs point to yes';
     break;
 }
+
+console.log(`The magic eight ball replies: ${eightBall}`);
