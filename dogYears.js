@@ -1,3 +1,7 @@
+// Here's how you convert your age from 'human years' to 'dog years':
+// The first two years of a dog's life count as 10.5 dog years each
+// Each year following equates to 4 dog years
+
 // set starting age
 const myAge = 40;
 
@@ -9,3 +13,5 @@ earlyYears *= 10.5;
 
 // to account for the first two years
 let laterYears = myAge -2;
+
+// accounting for
