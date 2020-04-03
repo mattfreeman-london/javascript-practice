@@ -3,3 +3,6 @@ const kelvin = 273;
 
 // convert to celsius
 const celsius = kelvin - 273;
+
+// calculating Fahrenheit
+let fahrenheit = celsius * (9/5) + 32;
