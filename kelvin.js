@@ -11,3 +11,9 @@ let fahrenheit = celsius * (9/5) + 32;
 fahrenheit = Math.floor(fahrenheit);
 
 console.log(`The temperature is ${kelvin} degrees Kelvin.`);
+
+let newton = celsius * (33/100);
+
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees Newton.`);
