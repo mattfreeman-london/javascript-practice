@@ -14,4 +14,5 @@ earlyYears *= 10.5;
 // to account for the first two years
 let laterYears = myAge -2;
 
-// accounting for
+// accounting for the rest of the dogs age
+laterYears *= 4;
