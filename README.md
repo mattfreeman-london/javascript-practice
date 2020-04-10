@@ -12,3 +12,6 @@ magicEightBall.js:
 
 NumberGuesser.js:
 - part of a file to create a number guessing game, from CodeAcademy
+
+randomMealGenerator.js:
+- allows you to create a selection of meals and randomly select from them
