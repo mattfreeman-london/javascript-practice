@@ -1,0 +1,82 @@
+const menu = {
+    /// create the courses
+    _courses: {
+      appetizers: [],
+      mains: [],
+      sides: [],
+      desserts: [],
+    },
+    /// set getters and setters for each of the above
+    get appetizers() {
+      return this._courses.appetizers;
+    },
+    set appetizers(appetizerIn) {
+      this.courses.appetizers = appetizerIn;
+    },
+    get mains() {
+      return this._courses.mains;
+    },
+    set mains(mainsIn) {
+      this.courses.mains = mainsIn;
+    },
+    get sides() {
+      return this._courses.sides;
+    },
+    set sides(sidesIn) {
+      this.courses.mains = sidesIn;
+    },
+    get desserts() {
+      return this._courses.desserts;
+    },
+    set desserts(dessertsIn) {
+      this.courses.desserts = dessertsIn;
+    },
+    /// set a getter for the courses total
+    get courses() {
+      return {
+        appetizers: this.appetizers,
+        mains: this.mains,
+        sides: this.sides,
+        desserts: this.desserts,
+        };
+      },
+    /// create a dish and push it into the right array  
+    addDishToCourse (courseName, dishName, dishPrice) {
+      const dish = {
+        name: dishName,
+        price: dishPrice
+      };
+      return this._courses[courseName].push(dish);
+    },
+    /// randomly select a dish from the relevant array
+    getRandomDishFromCourse(courseName) {
+      const dishes = this._courses[courseName];
+      const randomIndex = Math.floor(Math.random() * dishes.length);
+      return dishes[randomIndex];
+    },
+    /// get one of each course, print the string
+    generateRandomMeal() {
+      const appetizer = menu.getRandomDishFromCourse('appetizers');
+      const main = menu.getRandomDishFromCourse('mains');
+      const side = menu.getRandomDishFromCourse('sides');
+      const dessert = menu.getRandomDishFromCourse('desserts');
+      const totalPrice = appetizer.price + main.price + dessert.price;
+      return `Welcome to the Random Cafe! Your meal is ${appetizer.name}, ${main.name} with ${side.name} and ${dessert.name}. The price is $${totalPrice} plus tax. Have a lovely day.`;
+    },
+}
+ 
+menu.addDishToCourse('appetizers', 'Garlic Bread', 2.5);
+menu.addDishToCourse('appetizers', 'Greek Salad', 1);
+menu.addDishToCourse('appetizers', 'Leek Soup', 3.25);
+menu.addDishToCourse('mains', 'Chicken Pie', 10);
+menu.addDishToCourse('mains', 'Pepperoni Pizza', 12);
+menu.addDishToCourse('mains', 'T-Bone Steak', 18);
+menu.addDishToCourse('sides', 'chips', 2.5);
+menu.addDishToCourse('sides', 'vegetables in season', 3);
+menu.addDishToCourse('sides', 'rice', 1);
+menu.addDishToCourse('desserts', 'Vanilla Ice Cream', 5);
+menu.addDishToCourse('desserts', 'Chocolate Torte', 4.5);
+menu.addDishToCourse('desserts', 'Irish Coffee', 3);
+ 
+let meal = menu.generateRandomMeal();
+console.log(meal);
