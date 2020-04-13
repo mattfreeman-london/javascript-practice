@@ -10,6 +10,9 @@ Kelvin.js:
 magicEightBall.js:
 - to create a simple random machine to answer questions
 
+miniLinter.js:
+- taking a sample paragraph and tracking unneeded words and number of sentences
+
 NumberGuesser.js:
 - part of a file to create a number guessing game, from CodeAcademy
 
