@@ -4,6 +4,9 @@ Repo showing progress in learning JavaScript via CodeAcademy
 dogYears.js:
 - to enter a human age, and see it in dog years
 
+hospitalEmployee.js:
+- create a parent, and then child class
+
 Kelvin.js:
 - to convert a starting temperature into Celsius and Newtom
 
