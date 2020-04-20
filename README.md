@@ -13,6 +13,9 @@ Kelvin.js:
 magicEightBall.js:
 - to create a simple random machine to answer questions
 
+mediaLibrary.js:
+- create a media library, using parent and child classes
+
 miniLinter.js:
 - taking a sample paragraph and tracking unneeded words and number of sentences
 
