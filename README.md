@@ -22,6 +22,9 @@ miniLinter.js:
 NumberGuesser.js:
 - part of a file to create a number guessing game, from CodeAcademy
 
+schoolCatalogue.js:
+- a file to create Junior, Middle and High School using parent and child classes
+
 teamStats.js:
 - create a team object, filled with player and game objects
 
