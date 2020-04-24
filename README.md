@@ -16,6 +16,9 @@ magicEightBall.js:
 mediaLibrary.js:
 - create a media library, using parent and child classes
 
+message.js & messageMixer.js:
+- module practice, linking two files together
+
 miniLinter.js:
 - taking a sample paragraph and tracking unneeded words and number of sentences
 
