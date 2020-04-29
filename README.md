@@ -34,5 +34,8 @@ teamStats.js:
 randomMealGenerator.js:
 - allows you to create a selection of meals and randomly select from them
 
-whaleTalk.js
+whaleTalk.js:
 - turn any input into the same sentence in Whale Talk, as per Dory from Finding Nemo
+
+workAround.js & employee.js:
+- two linked files, demonstrating module linking
